@@ -12,9 +12,11 @@
 		5A0F904B1CEE57F2004A1917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F90491CEE57F2004A1917 /* Main.storyboard */; };
 		5A0F904D1CEE57F2004A1917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F904C1CEE57F2004A1917 /* Assets.xcassets */; };
 		5A0F90501CEE57F2004A1917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F904E1CEE57F2004A1917 /* LaunchScreen.storyboard */; };
+		7AD3B49217A6A99D6FB4E8B6 /* libPods-TestKinveyPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC68246A67AAF5D83FE7FBE3 /* libPods-TestKinveyPush.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065D345B0B71362A09BA46A0 /* Pods-TestKinveyPush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKinveyPush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestKinveyPush/Pods-TestKinveyPush.debug.xcconfig"; sourceTree = "<group>"; };
 		5A0F90421CEE57F2004A1917 /* TestKinveyPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKinveyPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F90451CEE57F2004A1917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A0F90471CEE57F2004A1917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		5A0F904C1CEE57F2004A1917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0F904F1CEE57F2004A1917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0F90511CEE57F2004A1917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A0F90571CEE5CA0004A1917 /* TestKinveyPush-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestKinveyPush-Bridging-Header.h"; sourceTree = "<group>"; };
+		C67FEF14E343E4E355F23B7F /* Pods-TestKinveyPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKinveyPush.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestKinveyPush/Pods-TestKinveyPush.release.xcconfig"; sourceTree = "<group>"; };
+		EC68246A67AAF5D83FE7FBE3 /* libPods-TestKinveyPush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestKinveyPush.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD3B49217A6A99D6FB4E8B6 /* libPods-TestKinveyPush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3D35E38D6767282EBBD30D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				065D345B0B71362A09BA46A0 /* Pods-TestKinveyPush.debug.xcconfig */,
+				C67FEF14E343E4E355F23B7F /* Pods-TestKinveyPush.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		524527F0E3FB6F4930B15327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC68246A67AAF5D83FE7FBE3 /* libPods-TestKinveyPush.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A0F90391CEE57F1004A1917 = {
 			isa = PBXGroup;
 			children = (
 				5A0F90441CEE57F2004A1917 /* TestKinveyPush */,
 				5A0F90431CEE57F2004A1917 /* Products */,
+				0B3D35E38D6767282EBBD30D /* Pods */,
+				524527F0E3FB6F4930B15327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				5A0F904C1CEE57F2004A1917 /* Assets.xcassets */,
 				5A0F904E1CEE57F2004A1917 /* LaunchScreen.storyboard */,
 				5A0F90511CEE57F2004A1917 /* Info.plist */,
+				5A0F90571CEE5CA0004A1917 /* TestKinveyPush-Bridging-Header.h */,
 			);
 			path = TestKinveyPush;
 			sourceTree = "<group>";
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A0F90541CEE57F2004A1917 /* Build configuration list for PBXNativeTarget "TestKinveyPush" */;
 			buildPhases = (
+				BC0CEDF24CFEC1D399D91FD0 /* 📦 Check Pods Manifest.lock */,
 				5A0F903E1CEE57F2004A1917 /* Sources */,
 				5A0F903F1CEE57F2004A1917 /* Frameworks */,
 				5A0F90401CEE57F2004A1917 /* Resources */,
+				CB84203FE00424CF87241496 /* 📦 Embed Pods Frameworks */,
+				6E225FBDAC8225EA669935CD /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,12 @@
 				TargetAttributes = {
 					5A0F90411CEE57F2004A1917 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G79S48QSTM;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E225FBDAC8225EA669935CD /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestKinveyPush/Pods-TestKinveyPush-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0CEDF24CFEC1D399D91FD0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB84203FE00424CF87241496 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestKinveyPush/Pods-TestKinveyPush-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A0F903E1CEE57F2004A1917 /* Sources */ = {
@@ -249,23 +332,32 @@
 		};
 		5A0F90551CEE57F2004A1917 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065D345B0B71362A09BA46A0 /* Pods-TestKinveyPush.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestKinveyPush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindscrub.TestKinveyPush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestKinveyPush/TestKinveyPush-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5A0F90561CEE57F2004A1917 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67FEF14E343E4E355F23B7F /* Pods-TestKinveyPush.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestKinveyPush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindscrub.TestKinveyPush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestKinveyPush/TestKinveyPush-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +380,7 @@
 				5A0F90561CEE57F2004A1917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

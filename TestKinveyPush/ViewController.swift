@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        KCSUser.loginWithUsername(
+            "iphone",
+            password: "iphone",
+            withCompletionBlock: { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
+                if errorOrNil == nil {
+                    print("Logged in")
+                }
+        })
+        
     }
 
     override func didReceiveMemoryWarning() {
