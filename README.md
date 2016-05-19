@@ -15,7 +15,7 @@ Through Kinvey console, send test push messages.
 Debug steps for Push notifications:
 
 1.  cd to .app folder
-    codesign -d --entitlements :- "TestKinveyPush.app"
+    Run this cmd: codesign -d --entitlements :- "TestKinveyPush.app"
     You should see the <aps-environment> entitlement
 
 2.  You can delete the provisioning profile from Xcode Prefrences and re-download it.
