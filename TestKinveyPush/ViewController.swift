@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         KCSUser.loginWithUsername(
-            "iphone1",
-            password: "iphone1",
+            "iphonebeta",
+            password: "iphonebeta",
             withCompletionBlock: { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
                     print("Logged in")
